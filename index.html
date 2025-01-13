@@ -16,7 +16,7 @@ title: ReadGram
                 return;
             }
 
-            const url = `http://mysite.com/id=${encodeURIComponent(userId)}`;
+            const url = `https://www.goodreads.com/review/list/${encodeURIComponent(userId)}?shelf=currently-reading`;
             try {
                 const response = await fetch(url);
                 if (!response.ok) {
